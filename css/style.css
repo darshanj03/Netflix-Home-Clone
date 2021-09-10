@@ -21,14 +21,33 @@ body {
   color: #fff;
 }
 
+.f-l {
+  font-size: 52px;
+  color: #fff;
+}
+
 .f-m {
   font-size: 25px;
+  color: #fff;
+}
+
+.f-mid-m {
+  font-size: 26px;
+  font-weight: 300px;
   color: #fff;
 }
 
 .f-s {
   font-size: 20px;
   color: #fff;
+}
+
+.f-align {
+  text-align: left;
+}
+
+.f-pad {
+  margin-bottom: 1rem;
 }
 
 .header {
@@ -47,8 +66,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   box-shadow: inset 80px 100px 250px #000000, inset -80px -100px 250px #000000;
 }
 
@@ -56,7 +74,7 @@ body {
   position: relative;
   height: 90px;
   margin: auto;
-  z-index: 2;
+  z-index: 1;
 }
 
 .btn {
@@ -81,39 +99,6 @@ body {
   padding: 0 0.5rem;
   height: 60px;
   /* font-size: 20px; */
-}
-
-.f-x-l {
-  font-size: 65px;
-  color: #fff;
-}
-
-.f-l {
-  font-size: 52px;
-  color: #fff;
-}
-
-.f-m {
-  font-size: 25px;
-  color: #fff;
-}
-
-.f-mid-m {
-  font-size: 26px;
-  color: #fff;
-}
-
-.f-s {
-  font-size: 20px;
-  color: #fff;
-}
-
-.f-align {
-  text-align: left;
-}
-
-.f-pad {
-  margin-bottom: 1rem;
 }
 
 .header-top img {
@@ -142,7 +127,7 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 9rem;
-  z-index: 2;
+  z-index: 1;
 }
 
 .content h1 {
@@ -151,6 +136,11 @@ body {
 
 .content p {
   margin-top: 15px;
+}
+
+.content input {
+  outline: none;
+  font: inherit;
 }
 
 #content-margin {
@@ -183,17 +173,20 @@ body {
   background-color: #f40612;
 }
 
+/* Mid-Section */
+
 .mid-section {
   /* padding: 3rem 0; */
   background: #000;
   color: #fff;
 }
 
-.mid-content {
+/* mid-1 css */
+.mid-content-1 {
   border-bottom: 8px solid rgb(41, 40, 40);
 }
 
-.mid-content .mid-1-content {
+.mid-content-1 .mid-1-content {
   max-width: 80%;
   margin: auto;
   overflow: hidden;
@@ -206,20 +199,11 @@ body {
   text-align: center;
 }
 
+/* mid-2 css */
 .mid-2-container {
   display: inline-block;
   /* border: 2px solid red;
-  background-color: #000000; */
-}
-
-.mid-3-container {
-  max-width: 80%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2.5rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+background-color: #000000; */
 }
 
 .stranger-things {
@@ -238,7 +222,7 @@ body {
 }
 
 #bold-text {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 #blue-text {
@@ -257,6 +241,7 @@ body {
   width: 48px;
 }
 
+/* mid-3 css */
 .mid-content-3 {
   border-bottom: 8px solid rgb(41, 40, 40);
 }
@@ -272,4 +257,115 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* mid-4 css */
+.mid-content-4 {
+  border-bottom: 8px solid rgb(41, 40, 40);
+}
+
+.mid-4-content {
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.mid-content-4 .mid-4-content {
+  max-width: 80%;
+  margin: auto;
+  overflow: hidden;
+  /* padding: 3rem 2rem; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* .mid-section-5 {
+text-align: center;
+} */
+
+.mid-section-5 h1 {
+  text-align: center;
+  padding: 80px;
+}
+
+.links {
+  text-align: center;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links button {
+  text-align: left;
+  padding: 5px 5px 5px 20px;
+  width: 50%;
+}
+
+/* .color-white {
+  color: #fff;
+} */
+
+.content-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* video and tv here */
+
+img {
+  width: 100%;
+}
+
+.card-0,
+.card-1,
+.card-2,
+.card-3 {
+  border-top: 8px rgb(69, 69, 69) solid;
+  padding: 50px;
+}
+
+.card-1 {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 50% 40%;
+  text-align: left;
+  align-items: center;
+  padding: 25px 45px 50px;
+}
+
+.desc-1 {
+  padding-left: 80px;
+}
+
+.style-cards h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.style-cards h3 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.card-1 video {
+  position: relative;
+  width: 100%;
+  height: 54%;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  z-index: -1;
+}
+
+.card-1 img {
+  grid-column: 2/2;
+  grid-row: 1/2;
 }
