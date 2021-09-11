@@ -289,6 +289,14 @@ body {
   align-content: center;
 }
 
+.bottom-margin {
+  margin-bottom: 8px;
+}
+
+.top-margin {
+  margin-top: 2px;
+}
+
 /*mid-section specific classes*/
 .card-3-text {
   max-width: 49%;
@@ -311,7 +319,6 @@ body {
   border: none;
   text-decoration: none;
   cursor: pointer;
-  margin-bottom: 8px;
   padding: 20px 57px 20px 30px;
   background-color: #303030;
   color: white;
@@ -354,6 +361,15 @@ body {
   text-decoration: underline;
 }
 
+.list-content {
+  text-align: left;
+  background-color: #303030;
+  color: #fff;
+  font-size: 26px;
+  padding: 20px 57px 20px 30px;
+  margin-bottom: 8px;
+}
+
 /*footer section specific classes*/
 .quick-links-top {
   text-align: left;
@@ -378,7 +394,7 @@ body {
 
 .quick-links-middle li {
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .quick-links-bottom {
@@ -413,6 +429,19 @@ body {
 
 .get-started-bottom button:hover {
   background-color: #f40612;
+}
+
+#li-1-content,
+#li-2-content,
+#li-3-content,
+#li-4-content,
+#li-5-content,
+#li-6-content {
+  display: none;
+}
+
+.show-content {
+  display: block;
 }
 
 /*footer section specific classes ends here*/
