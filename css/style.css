@@ -565,6 +565,7 @@ body {
   }
 
   .card-display-sub-1 {
+    margin: 0;
     width: 100%;
     display: block;
     justify-content: center;
@@ -578,10 +579,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-right: 20px;
+    margin-right: 0;
   }
 
   .card-display-text-1 h1 {
+    width: 100%;
     margin-top: 0;
     margin-bottom: 8px;
   }
