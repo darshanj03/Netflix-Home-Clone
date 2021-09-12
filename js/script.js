@@ -57,28 +57,72 @@
 
 const listItems = document.querySelectorAll(".li-li");
 const listContentItems = document.querySelectorAll(".list-content");
+const icons = document.querySelectorAll(".icon");
 listItems.forEach(item => item.addEventListener("click", showContent));
+
+// const icons = document.querySelectorAll(".btn");
+// icons.forEach(iTem => iTem.addEventListener("click", changeIcon));
+
 
 
 function showContent(e){ 
+    const icon = document.querySelector(`#${this.id}-button`);
     const listItem = document.querySelector(`#${this.id}-content`);
-    if(listItem.style.display == "block") {
-       listItem.style.display = "none";
-    } else {
-    console.log(this.id);
+    if(listItem.style.display == "block") {  
+      listItem.style.display = "none";
+      icon.classList.replace("fa-times", "fa-plus");
+    // changeIcon();
+       
+    } else {  
     removeItem();
+    icon.classList.replace("fa-plus", "fa-times");
     listItem.style.display = "block";
-    }
+    }  
 };
 
 function removeItem() {
     listContentItems.forEach(item => {
     item.style.display = "none";
-    // item.classList.remove('show');
+    })
+    icons.forEach(item => {
+        item.classList.replace("fa-times","fa-plus");
     })
 };
 
 function changeIcon() {
-    const icon = getElementById("icon-plus");
-    icon.classList.remove("remove");
-}
+  const icon = document.querySelector(`#${this.id}-button`);
+  console.log(this.id);
+    if (icon.classList[1] == "fa-plus") {
+        icon.classList.replace("fa-plus", "fa-times");
+    }
+    else if (icon.classList[1] == "fa-times") {
+        icon.classList.replace("fa-times", "fa-plus");
+    }    
+};
+
+// var something = document.querySelectorAll('.btn-');
+// var idk = document.querySelectorAll('.on-click');
+
+// idk.addEventListener('click', changeIcon);
+
+// function changeIcon() {
+//     for(var i = 0; i<something.length; i++) {
+//         something[i].classList.remove('fa-plus')
+//     }
+
+// };
+
+// const icons = document.querySelectorAll(".icon");
+// icons.forEach(item => item.addEventListener("click", iconChange));
+
+
+// function iconChange(e) {
+//    const iconic = document.querySelector(`#${this.id}`);
+//    if(iconic.classList[1] == "fa-plus"){
+//      iconic.classList.replace("fa-plus","fa-times");
+//    }
+
+//    else if(iconic.classList[1] == "fa-times"){
+//      iconic.classList.replace("fa-times","fa-plus");
+//    }
+//  };
